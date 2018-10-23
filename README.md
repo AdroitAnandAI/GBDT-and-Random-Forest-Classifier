@@ -74,3 +74,110 @@ BoW will result in a sparse matrix with huge number of features as it creates a 
 
 For Binary BoW feature representation, CountVectorizer is declared as float, as the values can take non-integer values on further processing.
 
+![1](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/1.PNG)
+
+![2](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/2.PNG)
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/3.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/4.PNG">
+</p>
+
+![5](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/5.PNG)
+
+![6](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/6.PNG)
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/7.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/8.PNG">
+</p>
+
+## tf-IDF ##
+
+Sparse matrix generated from tf-IDF is fed in to GridSearch GBDT Cross Validator & RF Cross Validator to find the optimal depth value. Performance metrics of optimal GBDT with tf-idf featurization is found.
+
+![9](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/9.PNG)
+
+![10](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/10.PNG)
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/11.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/12.PNG">
+</p>
+
+![13](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/13.PNG)
+
+![14](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/14.PNG)
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/15.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/16.PNG">
+</p>
+
+## Word2Vec ##
+
+**Dense matrix generated from Word2Vec** is fed in to GridSearch GBDT Cross Validator & RF Cross Validator to find the optimal depth value. Performance metrics of GBDT and RF with W2V featurization is found.
+
+![17](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/17.PNG)
+
+![18](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/18.PNG)
+
+![18-2](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/18-2.PNG)
+
+![18-3](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/18-3.PNG)
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/19.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/20.PNG">
+</p>
+
+## TF-ID Weighted W2V ##
+
+![21](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/21.PNG)
+
+![22](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/22.PNG)
+
+![22-2](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/22-2.PNG)
+
+![22-3](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/22-3.PNG)
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/23.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/24.PNG">
+</p>
+
+## Summary Statistics ##
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/25.PNG">
+</p>
+
+## Observations ##
+
+1. The **best model** based on test metrics is found to be **GBDT on tf-idf**. The F1 Score is **94.12**, while **98% of positive points and around 50% of negative points** are detected correctly.
+
+2. The **classification accuracy of GBDT and RF is found to be less than linear models** like logistic regression. This is possibly because the **separation at high dimensional space using hyperplanes is easier** than doing a decision tree based approach.
+
+3. **GBDT consistently performs better than RF for Amazon review classiciation problem.
+
+4. The **wordcloud figure of GBDT is much clearer than RF**. RF wordcloud is too cluttered and hence less suitable.
+
+5. **Words such as “dissapoint”, “horrible” etc have high feature importance**, as evident from the wordcloud. While these words are important **to classify negative reviews, words like “love”, “good”, “best” etc. also have high feature importance, as they intuitively denote positive reviews**.
