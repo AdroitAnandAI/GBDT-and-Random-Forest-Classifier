@@ -74,3 +74,58 @@ BoW will result in a sparse matrix with huge number of features as it creates a 
 
 For Binary BoW feature representation, CountVectorizer is declared as float, as the values can take non-integer values on further processing.
 
+![1](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/1.PNG)
+
+![2](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/2.PNG)
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/3.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/4.PNG">
+</p>
+
+![5](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/5.PNG)
+
+![6](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/6.PNG)
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/7.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/8.PNG">
+</p>
+
+## tf-IDF ##
+
+Sparse matrix generated from tf-IDF is fed in to GridSearch GBDT Cross Validator & RF Cross Validator to find the optimal depth value. Performance metrics of optimal GBDT with tf-idf featurization is found.
+
+![9](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/9.PNG)
+
+![10](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/10.PNG)
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/11.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/12.PNG">
+</p>
+
+![13](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/13.PNG)
+
+![14](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/14.PNG)
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/15.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/16.PNG">
+</p>
+
+
+
+
