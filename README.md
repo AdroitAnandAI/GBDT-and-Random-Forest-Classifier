@@ -38,21 +38,21 @@ The code below would **clean the review text from html tags and punctuations and
 
 ## Data Source ##
 
-The preprocessing step has produced final.sqlite file after doing the data preparation & cleaning. The review text is now devoid of punctuations, HTML markups and stop words.
+The **preprocessing step has produced final.sqlite file after doing the data preparation & cleaning**. The review text is now devoid of punctuations, HTML markups and stop words.
 
 ## Objective ##
 
-To find number of trees of Random Forest Classifier using GridSearchCV or iterated cross validation on standardized feature vectors obtained from BoW, tf-idf, W2V and tf-idf weighted W2V featurizations.
+**To find number of trees of Random Forest Classifier using GridSearchCV or iterated cross validation** on standardized feature vectors obtained from BoW, tf-idf, W2V and tf-idf weighted W2V featurizations.
 
-Use Gradient Boosted Decision Trees alongsize RF for comparison. GridSearchCV is to be done in order to tune 3 hyperparameters: # of trees, depth of the tree as well as learning rate.
+**Use Gradient Boosted Decision Trees alongsize RF for comparison. GridSearchCV is to be done in order to tune 3 hyperparameters: # of trees, depth of the tree as well as learning rate**.
 
 Find Precision, Recall, F1 Score, Confusion Matrix, Accuracy of the optimal model obstained with GridSearch or Cross Validation, on vectorized input data, for BoW, tf-idf, W2V and tf-idf weighted W2V featurizations. TPR, TNR, FPR and FNR is calculated for all.
 
 ## At a glance ##
 
-Tail end data is taken after sorting the data, to conserve the timing info & time Series based cross validation is done, as it is time series data. The optimal number of trees for Random Forest Classifier is found using GridSearchCV (wrote code for cross validation also), by searching for # of trees between 9 - 135, with step size 9.
+Tail end data is taken after sorting the data, to conserve the timing info & time Series based cross validation is done, as it is time series data. **The optimal number of trees for Random Forest Classifier is found using GridSearchCV (wrote code for cross validation also), by searching for # of trees between 9 - 135, with step size 9**.
 
-GBDT is also done along with RF. The optimal parameters for GBDT is found using GridSearchCV. Parameter tuning of 3 hyperparameters is done: # of trees between 20-81 (with step size 10), max_depth between 5-16 (with step size 2) & learning_rate between 0.05 - 0.2 (with step size 0.05).
+GBDT is also done along with RF. The **optimal parameters for GBDT is found using GridSearchCV. Parameter tuning of 3 hyperparameters is done**: # of trees between 20-81 (with step size 10), max_depth between 5-16 (with step size 2) & learning_rate between 0.05 - 0.2 (with step size 0.05).
 
 The Precision, Recall, F1 Score, Confusion Matrix, Accuracy metrics are found out for all 4 featurizations.
 
@@ -70,7 +70,7 @@ d) Generate Word Cloud based on Feature Importance
 
 ## BoW ##
 
-BoW will result in a sparse matrix with huge number of features as it creates a feature for each unique word in the review.
+BoW will result in a **sparse matrix with huge number of features** as it creates a feature for each unique word in the review.
 
 For Binary BoW feature representation, CountVectorizer is declared as float, as the values can take non-integer values on further processing.
 
@@ -100,7 +100,7 @@ For Binary BoW feature representation, CountVectorizer is declared as float, as 
 
 ## tf-IDF ##
 
-Sparse matrix generated from tf-IDF is fed in to GridSearch GBDT Cross Validator & RF Cross Validator to find the optimal depth value. Performance metrics of optimal GBDT with tf-idf featurization is found.
+**Sparse matrix generated from tf-IDF** is fed in to GridSearch GBDT Cross Validator & RF Cross Validator to find the optimal depth value. Performance metrics of optimal GBDT with tf-idf featurization is found.
 
 ![9](https://github.com/AdroitAnandAI/GBDT-and-Random-Forest-Classifier/blob/master/images/9.PNG)
 
