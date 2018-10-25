@@ -58,15 +58,15 @@ The Precision, Recall, F1 Score, Confusion Matrix, Accuracy metrics are found ou
 
 ## Custom Defined Functions ##
 
-4 user defined functions are written to
+**4 user defined functions are written to
 
-a) Random Forest Hyperparameter Tuning
+**a) Random Forest Hyperparameter Tuning** - To find the optimal number of trees for the Classifier, using GridSearchCV.
 
-b) Gradient Boosted Decision Tree (GBDT) Hyperparameter Tuning
+**b) Gradient Boosted Decision Tree (GBDT) Hyperparameter Tuning** - To find the optimal parameters for GBDT, using GridSearchCV.
 
-c) Compute Performance Metrics for RF & GBDT
+**c) To compute the performance metrics for RF & GBDT
 
-d) Generate Word Cloud based on Feature Importance
+**d) Generate Word Cloud based on Feature Importance** - To diagrammatically represent words in Amazon reviews based on Feature Importance for classification.
 
 ## BoW ##
 
